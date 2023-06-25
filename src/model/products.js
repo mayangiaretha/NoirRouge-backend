@@ -1,7 +1,7 @@
 import mongoose, {Schema} from "mongoose";
 
 const productSchema = new mongoose.Schema({
-    roles: {
+    user: {
         type: Schema.Types.ObjectId,
         ref: 'User',
         required: true,
