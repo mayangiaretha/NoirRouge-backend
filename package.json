@@ -11,6 +11,8 @@
     "prettier:check": "prettier --check .",
     "prettier": "prettier --write .",
     "dev": "env-cmd -f ./config/dev.env nodemon --exec babel-node src/index.js",
+    "data:import": "env-cmd -f ./config/dev.env nodemon --exec babel-node src/seeder.js",
+    "data:destroy": "env-cmd -f ./config/dev.env nodemon --exec babel-node src/seeder.js -d",
     "test": "env-cmd -f ./config/test.env jest --runInBand --verbose --coverage"
   },
   "author": "",
@@ -22,6 +24,7 @@
     "bcryptjs": "^2.4.3",
     "celebrate": "^15.0.1",
     "chai": "^4.3.7",
+    "colors": "^1.4.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dayjs": "^1.11.7",
